@@ -18,6 +18,9 @@
         <a href="#">Aktualności</a>
         </li>
         <li>
+          <a href="#">Branże</a>
+          </li>
+        <li>
         <a href="#">Produkty</a>
         </li>
         <li>
@@ -32,12 +35,11 @@
       </ul>
 
         <section class="searchIconZone"> 
-          <input type="text" placeholder="Search">
-          <i class="fa fa-search"> </i> 
+          <input type="search" id="search" name="search">
+          <label for="search" class="fa fa-search"></label>
         </section>
     </nav>
 
-  
       <nav>
         <ul>
           <li><a href="#">Menu</a></li>
@@ -58,28 +60,25 @@
           <li><a href="#"><i class="fa fa-facebook-f"> </i> </a></li>
           <li><a href="#"><i class="fa fa-linkedin"></i> </a></li>
           </ul>
-
           <div>
-            <button type="button">
-              <i></i> <span> menu</span>
+            <button type="button" id="showHideBtn">
+              <i class="fas fa-angle-right"></i><span id="showHideTxt">menu</span>
             </button>
           </div>
       </nav>
- 
-
-
-
+    
 
     <main>
-    <article>
-    <h1><i class="fa fa-home" id="home"></i>O FIRMIE</h1>
+    
+    <header> <i class="fa fa-home"> </i> <h1>O FIRMIE</h1> </header>
     <hr>
-    <p> SIMPLE - z nami biznes jest prostszy!</p>
-    <br></br>
-    <div>
-      <div>
+    
+    <h2> SIMPLE - z nami biznes jest prostszy! </h2>
+    <article>
+      <section style="background-color:blue;"> 
+        <figure> <img src="happy_man_in_shirt.jpg" alt="Happy and relaxed man sitting"> </figure> 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta recusandae culpa eos cumque praesentium labore officia ab a fuga, adipisci laudantium quam, non perferendis dignissimos nostrum natus excepturi velit?
-       <figure> <img src="happy_man_in_shirt.jpg" alt="Happy and relaxed man sitting"> </figure> 
+    
         <p>PONAD 24 LATA DOŚWIADCZENIA
         <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta recusandae culpa eos cumque praesentium labore officia ab 
         a fuga, adipisci laudantium quam non perferendis dignissimos nostrum natus excepturi velit consectetur adipisicing elit 
@@ -99,8 +98,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta recusan
         <p>NASI ODBIORCY
         <br>Laudantium quam dolor sit amet consectetur adipisicing elit culpa eos cumque praesentium,</br>
         </p>
-      </div>
-      <div>
+      </section>
+    <section style="background-color:brown;"> 
         <p>
             Quibusdam dicta recusandae culpa eos cumque praesentium labore officia ab 
             a fuga, adipisci laudantium quam non perferendis dignissimos nostrum natus excepturi velit consectetur cumque praesentium labore
@@ -125,12 +124,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta recusan
         a fuga, adipisci laudantium quam non perferendis dignissimos nostrum natus excepturi velit consectetur adipisicing elit 
         adipisci laudantium quam dolor sit amet consectetur adipisicing elit culpa eos cumque praesentium dipisicing elit.</br>
         </p>
-      </div>
-    </div>
+      </section>
   </article>
+ 
 
-  </main>
-   <footer>footer</footer>
-  
+ 
+
+  </main> 
+  <footer></footer>
+
+
+
 </body>
 </html>

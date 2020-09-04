@@ -2,12 +2,13 @@
 -webkit-box-sizing: border-box; 
 -moz-box-sizing: border-box; 
 box-sizing: border-box;
-
 }
 
-body {
-   margin:0;
-}
+h2 {font-weight: 400; font-size: 1.2em;}
+nav > ul > li > a {color:white; text-decoration:none; font-size: 1.5rem; letter-spacing: 1.2px; }
+
+body { margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;  }
 
 body > nav:nth-of-type(1){
 background-color: #003c5c;
@@ -16,34 +17,55 @@ height: 9vh; }
 body > nav:nth-of-type(1) > img {
 position:absolute;
 height: 18vh;
-left: 16vw;
+left: 20vw;
 min-width: 180px;
 background-color:white;
 box-shadow: 0 10px 5px #7888;}
 
-a {color:white; text-decoration:none; font-size: 1.2em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
-body > nav:nth-of-type(1) > ul {padding-left: 33vw;}
+body > nav:nth-of-type(1) > ul {float:right; margin-right: 20vw;}
 body > nav:nth-of-type(1) > ul > li {
 display:inline-block;
 padding: 0 1.5em;
-font-size: 1.2em;
+font-size: .75em;
 line-height: 9vh;
 }
 
 nav ul {
     list-style: none; 
-    display:block; 
-} 
+    display:block; } 
 
 nav:nth-of-type(2) a {color:blue;}
 nav:nth-of-type(2){
     position:absolute;
     width: 10vw;
 }
+.searchIconZone {position:absolute; right: 2vw; top: 2vw; font-size: 2em; color: white;}
 
-main{padding: 5vh 25vw 0 25vw;}
+main {padding: 10vh 20vw 0 20vw;}
 
-.searchIconZone {position:absolute; right: 5vw; top: 2vw; font-size: 2em; color: white;}
+header {display: flex; justify-content: center; color:#003b5a; text-transform: uppercase; margin-bottom: 2vh;}
+header > h1 {font-size: 2.3em;  font-weight: 400; }
+header > i.fa-home { font-size: 6.6em; padding-right: 1vw; }
 
+article {display: flex; justify-content: space-between; }
+article > section {flex-basis: 49%;}
+article > section > figure {margin:0; padding:0; }
+article > section > figure > img {width: 100%}
 
+footer{height: 5vh; background-color: #003c5c; margin-top: 3vh;}
+
+input {
+    display: inline-block;
+    max-width: 0px;
+    background: #fff;
+    font-size: 1rem;
+    overflow: hidden;
+    padding:0;
+    border:0;
+    transition: max-width 0.14s linear;
+}
+input:focus {
+    max-width: 300px;
+    min-height: 2rem;
+}
 
